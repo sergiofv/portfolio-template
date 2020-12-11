@@ -135,6 +135,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # media folder route in database
 MEDIA_URL = '/media/'  # media folder url
 
 try:
-    from local_settings import *  # config to local settings (if available)
+    from .local_settings import *  # config to local settings (if available)
 except ImportError:
     pass
